@@ -2,40 +2,40 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="360dp"
-    android:layout_height="760dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     tools:context=".MainActivity">
-    <LinearLayout
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
         android:background="@drawable/gradient"
-        android:padding="10dp">
+        android:padding="20dp">
 
-        <LinearLayout
-            android:layout_width="340dp"
-            android:layout_height="160dp"
-            android:gravity="center_horizontal">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:gravity="center_horizontal"
+            android:id="@+id/hifive_logo">
 
             <ImageView
-                android:layout_width="98dp"
-                android:layout_height="88dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:background="@null"
                 android:src="@drawable/logo_hifive"/>
 
-        </LinearLayout>
+        </RelativeLayout>
 
-        <LinearLayout
-            android:layout_width="340dp"
-            android:layout_height="582dp"
-            android:background="@drawable/login_shape"
-            android:padding="10dp">
+    </RelativeLayout>
 
-
-        </LinearLayout>
-
-    </LinearLayout>
-
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/login_shape"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="10dp"/>
 
 
 </RelativeLayout>
